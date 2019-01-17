@@ -12,9 +12,7 @@ def install(lib_name):
     install_ps = Stream.from_command(command)
     irl = install_ps.map(lambda x:x>>stdout).sink_to_list()
   
-       
-    while install_ps.subp.poll() is None:
-        time.sleep(0.1)
+    install_ps.subp.wait()
 
     
     requests.post('http://518.is:9990',data=irl>>concat(''))
