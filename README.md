@@ -41,6 +41,12 @@ git checkout iss53`
 `git checkout master`
 
 Switched to branch 'master'
+
+### 合并分支
+
+`git checkout master`
+`git merge dayuseonly`
+
 ### 其他
 查看项目的分支们 (包括本地和远程)
 
