@@ -14,11 +14,12 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 　　
 ## 针对固定某个目录
-先安装pipreqs
-pip install pipreqs
+- 先安装pipreqs
+- pip install pipreqs
 
-在目标目录下执行
-pipreqs ./
+1. 在目标目录下执行
+2. pipreqs ./
+
 
 然后通过以下命令来安装 dependency:
 
